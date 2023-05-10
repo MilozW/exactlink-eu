@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: oblique;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Open Sans';
+
+    background-color: #180818;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, body {
+    padding: 0;
+    margin: 0;
+}
+
+.title .big-ass {
+    margin: 1.5em 0 1.5em 1.5em;
+}
+
+.big-ass img {
+    width: 100%;
+}
+
+.feature-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
+
+    padding: 3em 0;
+}
+
+.feature {
+
+    flex: 0 0 auto;
+    padding: 1em;
+
+    width: 37%;
+    max-width: 20em;
+    aspect-ratio: 1 / 1;
+    /* height: 100px; */
+    background-color: #345;
+    margin: 0 1.5em;
+
+    border-radius: 0 4em 0 0;
+}
+
+.menu.purple-i {
+    border: 2px solid #180818;
+}
+
+.title {
+    margin: 3em;
+    margin-top: 7em;
+}
+
+.title h1 {
+    font-size: 4em;
+}
+
+.feature h1 {
+    margin: 0 0 0.5em 0;
+
+}
+
+.purple {
+    background-color: #640D81;
+    color: #fff;
+}
+
+.other-purple {
+    background-color: #993399;
+    color: #fff;
+}
+
+.eu {
+    background-color: #004494;
+    /* border: 3px solid #ffd617; */
+    color: #fff;
+}
+
+.purple-i {
+    background-color: #fff;
+    color: #180818;
+}
+
+.dark-purple {
+    background-color: #180818;
+    color: #fff;
+}
+
+.title, .one-feature-container, .how-to, .specs {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.one-feature {
+    margin: 6em 0 6em 6em;
+
+}
+
+.explanation h2 {
+    padding: 0.5em 0 0.5em 0;
+}
+
+.explanation div {
+    padding: 0 0 1.5em 1em;
+}
+
+.purchase {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 1em;
+
+    
+}
+
+.buy-now {
+    padding: 1em;
+    border-radius: 0 2em 0 0;
+    aspect-ratio: 1 / 1;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.specifications, .specs {
+    padding: 1.5em;
+}
+
+.specs div {
+    margin: 0 1.5em;
+}
+
+.key {
+    text-align: right;
+}
+
+.how-to {
+    padding: 1.5em;
+
+    text-align: right;
+}
+
+.menubar {
+    position: fixed;
+    width: calc(100% - 4em);
+    top: 0;
+    left: 0;
+    display: float;
+    padding: 0 2em;
+}
+
+.menu {
+    float: right;
+    
+    padding: 0.5em 1em;
+    margin: 1em;
+    border-radius: 1000em;
+
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.order .item {
+    margin: 1.5em;
+    border-radius: 0 2em 0 0;
+
+    display: flex;
+}
+
+.item img {
+    height: 9em;
+    margin: 1.5em;
+}
+
+.item .info, .item .price, .item .parameters {
+    margin: 1.5em;
+}
+
+.item .parameters {
+    margin-left: auto;
+    /* margin-right: 1.5em; */
+}
+
+.item input, .item select {
+    border: none;
+    color: #180818;
+    background-color: #fff;
+    border: 1px solid #180818;
+    width: 5em;
+    height: 2em;
+}
+
+.parameters select {
+    display: float;
+    float: right;
+}
+
+.order .button {
+    margin: 0 1.5em;
+    display: float;
+    float: right;
+    padding: 0.5em 1em;
+    border-radius: 1000em;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
