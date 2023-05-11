@@ -162,15 +162,12 @@
     <script>
 
         function videoheight() {
-            console.log("h");
             let one_feature = document.getElementById("one-feature");
             let one_feature_container = document.getElementById("one-feature-container");
             
             one_feature_container.innerHTML = `<div id="one-feature">` + one_feature.innerHTML + `</div><video autoplay loop id="loopingvid" src="assets/renders/movin parts 2.mp4" style="height: calc(` + one_feature.clientHeight + `px + 12em)"></video>`;
 
             document.getElementById("loopingvid").muted = true;
-            // document.getElementById("loopingvid").play();
-
         };
 
         videoheight();
