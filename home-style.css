@@ -1,0 +1,151 @@
+.title .big-ass {
+    margin: 1.5em 0 1.5em 1.5em;
+}
+
+.video {
+    aspect-ratio: 16 / 9;
+    background-color: rgb(153, 153, 153);
+}
+
+.big-ass img {
+    width: 100%;
+}
+
+.feature-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
+
+    padding: 3em 0;
+}
+
+.feature {
+
+    flex: 0 0 auto;
+    padding: 1em;
+
+    width: 37%;
+    max-width: 20em;
+    aspect-ratio: 1 / 1;
+    /* height: 100px; */
+    background-color: #180818;
+    margin: 0 1.5em;
+    color: #fff;
+
+    border-radius: 0 4em 0 0;
+}
+
+.title {
+    margin: 3em;
+    margin-top: 6em;
+}
+
+.title h1 {
+    font-size: 4em;
+}
+
+.feature h1 {
+    margin: 0 0 0.5em 0;
+
+}
+
+.title, #one-feature-container, .how-to, .specs {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+video {
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+@media (max-width: 800px)
+{
+    .title {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 800px)
+{
+    .title {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+#one-feature {
+    margin: 6em 0 6em 6em;
+
+}
+
+.explanation h2 {
+    padding: 0.5em 0 0.5em 0;
+}
+
+.explanation div {
+    padding: 0 0 1.5em 1em;
+}
+
+.purchase {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 1em;
+
+    
+}
+
+.buy-now {
+    padding: 1em;
+    border-radius: 0 2em 0 0;
+    aspect-ratio: 1 / 1;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.specifications, .specs {
+    padding: 1.5em;
+}
+
+.specs div {
+    margin: 0 1.5em;
+}
+
+.key {
+    text-align: right;
+}
+
+.how-to {
+    padding: 1.5em;
+
+    text-align: right;
+}
+
+.menubar {
+    position: fixed;
+    width: calc(100% - 4em);
+    top: 0;
+    left: 0;
+    display: float;
+    padding: 0 2em;
+}
+
+.menu {
+    float: right;
+    
+    padding: 0.5em 1em;
+    margin: 1em;
+    border-radius: 1000em;
+
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
