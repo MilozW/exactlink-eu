@@ -42,7 +42,7 @@
 
     <div class="feature-container dark-purple">
         
-        <div class="feature purple-1">
+        <div class="purple-1 feature">
             <h1>Upload and Download.</h1>
             <h4>Transfer files from a USB connected Tablet or PC to or from any Fanuc RS232 enabled machine controller</h4>
         </div>
@@ -98,6 +98,8 @@
                 <div>Exactlink comes with a DB25 connector for a RS232 interface. Tested on <u>Fanuc controlled</u> machines, and follows the RS232 standard. The desktop application is available for Windows and Linux systems, designed with both tablets and desktops in mind.</div>
             </div>
         </div>
+
+        <!-- <img src="assets/renders/movin_img.png" alt=""> -->
 
     </div>
 
@@ -165,7 +167,7 @@
             let one_feature = document.getElementById("one-feature");
             let one_feature_container = document.getElementById("one-feature-container");
             
-            one_feature_container.innerHTML = `<div id="one-feature">` + one_feature.innerHTML + `</div><video autoplay loop id="loopingvid" src="assets/renders/movin parts 2.mp4" style="height: calc(` + one_feature.clientHeight + `px + 12em)"></video>`;
+            one_feature_container.innerHTML = `<div id="one-feature">` + one_feature.innerHTML + `</div><video autoplay loop id="loopingvid" src="./assets/renders/movin parts 2.mp4" style="height: calc(` + one_feature.clientHeight + `px + 12em)"></video>`;
 
             document.getElementById("loopingvid").muted = true;
         };
