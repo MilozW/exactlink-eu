@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: 'Open Sans';
     src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
@@ -64,4 +65,224 @@ h1, h2, h3, h4, h5, h6, body {
 .dark-purple {
     background-color: #180818;
     color: #fff;
+}
+=======
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: oblique;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Open Sans';
+
+    background-color: #180818;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, body {
+    padding: 0;
+    margin: 0;
+}
+
+.title .big-ass {
+    margin: 1.5em 0 1.5em 1.5em;
+}
+
+.video {
+    aspect-ratio: 16 / 9;
+    background-color: rgb(153, 153, 153);
+}
+
+.big-ass img {
+    width: 100%;
+}
+
+.feature-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
+
+    padding: 3em 0;
+}
+
+.title {
+    margin: 3em;
+    margin-top: 6em;
+}
+
+.title h1 {
+    font-size: 4em;
+}
+
+.feature h1 {
+    margin: 0 0 0.5em 0;
+
+}
+
+.purple-1, .purple-2, .purple-3, .purple-4, .purple-5 {
+    color: #fff;
+}
+
+.purple-1 {
+    border: 2px solid #640D81;
+    background-color: #640D81;
+    color: #fff;
+}
+
+.purple-2 {
+    border: 2px solid #7c10a0;
+    background-color: #7c10a0;
+}
+
+.purple-3 {
+    border: 2px solid #9312bd;
+    background-color: #9312bd;
+}
+
+.purple-4 {
+    border: 2px solid #a917da;
+    background-color: #a917da;
+}
+
+.purple-5 {
+    border: 2px solid #c619ff;
+    background-color: #c619ff;
+}
+
+.eu {
+    border: 2px solid #004494;
+    /* border: 3px solid #ffd617; */
+}
+
+.purple-i {
+    background-color: #fff;
+    
+    border: 2px solid #180818;
+    color: #180818;
+}
+
+.dark-purple {
+    background-color: #180818;
+}
+
+.feature {
+
+    flex: 0 0 auto;
+    padding: 1em;
+
+    width: 37%;
+    max-width: 20em;
+    aspect-ratio: 1 / 1;
+    /* height: 100px; */
+    margin: 0 1.5em;
+    color: #fff;
+
+    border-radius: 0 4em 0 0;
+
+    background-color: #180818;
+}
+
+.title, #one-feature-container, .how-to, .specs {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+video {
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+@media (max-width: 800px)
+{
+    .title {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 800px)
+{
+    .title {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+#one-feature {
+    margin: 6em 0 6em 6em;
+
+}
+
+.explanation h2 {
+    padding: 0.5em 0 0.5em 0;
+}
+
+.explanation div {
+    padding: 0 0 1.5em 1em;
+}
+
+.purchase {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 1em;
+
+    
+}
+
+.buy-now {
+    padding: 1em;
+    border-radius: 0 2em 0 0;
+    aspect-ratio: 1 / 1;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.specifications, .specs {
+    padding: 1.5em;
+}
+
+.specs div {
+    margin: 0 1.5em;
+}
+
+.key {
+    text-align: right;
+}
+
+.how-to {
+    padding: 1.5em;
+
+    text-align: right;
+}
+
+.menubar {
+    position: fixed;
+    width: calc(100% - 4em);
+    top: 0;
+    left: 0;
+    display: float;
+    padding: 0 2em;
+}
+
+.menu {
+    float: right;
+    
+    padding: 0.5em 1em;
+    margin: 1em;
+    border-radius: 1000em;
+
+    text-decoration: none;
+}
+
+.left {
+    float: left;
 }
