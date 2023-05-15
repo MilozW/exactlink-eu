@@ -88,7 +88,10 @@
                         *
                         * See: https://www.mollie.com/dashboard/developers/api-keys
                         */
-                        require "../initialize.php";
+                        // require "../initialize.php";
+
+                        $mollie = new \Mollie\Api\MollieApiClient();
+                        $mollie->setApiKey("test_WBh4ySNuvGwsn6WEvE6gM9sJFP7rpM");
 
                         /*
                         * Determine the url parts to these example files.
