@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exactlink</title>
+
+    <meta name="google-site-verification" content="eeZ0UmpWYz6rzEALdp564jhKz58hzQqCAt4GNg_G9_g" />
+    
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/homeStyle.css">
+    
+</head>
+<body>
+
+    <div class="menubar dark-purple">
+
+        <a class="menu left purple-i" href="download.php">
+            Software
+        </a>
+
+        <div class="menu purple-i" id="bottomPage" href="#">
+            Contact
+        </div>
+
+        <a class="menu purple-1" href="order.php">
+            Buy
+        </a>
+
+    </div>
+    
+    <div class="title">
+
+        <div>
+            <h1>Connect your CNC tool</h1>
+            <h1>To the 21st century!</h1>
+            <!-- <h2>Connect the Exactlink device to a PC or tablet and to your RS232 enabled machinetool.</h2>
+            <h2>Browse, upload and download your GCODE right in front of your machine.</h2>     -->
+        </div>
+
+        <div class="big-ass">
+            <img src="assets/renders/exactlink_device.png" alt="">
+        </div>
+                
+    </div>
+
+    <div class="feature-container dark-purple">
+        
+        <div class="purple-1 feature">
+            <h1>Up & Download.</h1>
+            <h4>Transfer GCODE from a USB connected Tablet or PC to or from any Fanuc RS232 enabled machinetool.</h4>
+        </div>
+
+        <div class="feature purple-2">
+            <h1>Data safety.</h1>
+            <h4>Keep your factory network disconnected from the internet. When a software update is available you will be notified.</h4>
+        </div>
+
+        <div class="feature purple-3">
+            <h1>Edit files on the fly.</h1>
+            <h4>Edit files prior to sending to your machinetool. No more walking around with USB's, CompactFlash or PC cards!</h4>
+        </div>
+
+        <div class="feature purple-4">
+            <h1>Dripfeed large files.</h1>
+            <h4>Avoid memory constraints by live feeding your machinetool with complex toolpaths.</h4>
+        </div>
+
+        <div class="feature eu">
+            <h1>Made in the EU.</h1>
+            <h4>Exactlink is designed, produced and shipped from The Netherlands.</h4>
+            <br>
+            <h4>Making Holland great again ; )</h4>
+        </div>
+
+        <div class="feature">
+
+        </div>
+
+    </div>
+
+    <div id="one-feature-container">
+
+
+        <div id="one-feature">
+            
+
+            <div class="explanation">
+                <h2>> Efficiency</h2>
+                <div>Instantly improve factory yield.</div>
+            </div>
+
+            <div class="explanation">
+                <h2>> Compatibility</h2>
+                <div>Exactlink comes with a DB25 connector for a RS232 interface. Tested on Fanuc controlled machinestools, and follows the RS232 standard. The desktop application is available for Windows and Linux systems, designed with both tablets and desktops in mind.</div>
+            </div>
+
+            <div class="explanation">
+                <h2>> KISS</h2>
+                <div>Keep it simple with Exactlink. Transfer GCODE like a boss.</div>
+            </div>
+
+        </div>
+
+        <!-- <img src="assets/renders/movin_img.png" alt=""> -->
+
+    </div>
+
+    <div class="how-to dark-purple">
+
+        <div class="video">
+        </div>
+
+        <div class="explanation">
+            
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div>
+
+            An Exactmetal company
+            <br>
+            <a href = "mailto:info@exactmetal.nl">info@exactmetal.nl</a>
+            <br>
+            +31640769158
+
+        </div>
+        
+        <div style="text-align: right;">
+            
+            BTW NL856711925B01
+            <br>
+            KVK 66823293
+            <br>
+            Leeuwenhoekstraat 10
+            <br>
+            2652XL Berkel en Rodenrijs
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        document.getElementById("bottomPage").addEventListener("click", function ()
+        {
+            window.scrollTo(0, document.body.scrollHeight);
+        });
+
+        function videoheight() {
+            let one_feature = document.getElementById("one-feature");
+            let one_feature_container = document.getElementById("one-feature-container");
+            
+            one_feature_container.innerHTML = `<div id="one-feature">` + one_feature.innerHTML + `</div><video autoplay loop id="loopingvid" src="./assets/renders/movin parts 2.mp4" style="height: calc(` + one_feature.clientHeight + `px + 12em)"></video>`;
+
+            document.getElementById("loopingvid").muted = true;
+        };
+
+        videoheight();
+
+        window.onresize = function () {videoheight()};
+
+    </script>
+
+</body>
+</html>

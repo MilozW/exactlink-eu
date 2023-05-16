@@ -1,0 +1,28 @@
+input {
+    border-radius: 0;
+    border: 2px solid #180818;
+    background-color: #fff;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.exactlinkID {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.exactlinkID input {
+    padding: 1.5em;
+    margin: 2em 0;
+    width: calc(100% - 3em);
+}
+
+input:focus {
+    outline: none;
+}
+
+#serialNumField {
+    width: 50%;
+}

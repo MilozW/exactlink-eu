@@ -1,0 +1,41 @@
+{
+    "product":
+    [    
+        {
+            "name": "Exactlink",
+            "pricing": [
+                {
+                    "min": 1,
+                    "price": 40000
+                },
+                {
+                    "min": 10,
+                    "price": 38000
+                },
+                {
+                    "min": 30,
+                    "price": 32000
+                }
+            ],
+            "option": [
+                
+            ],
+            "removeable": true,
+            "image": "bakkie_top.png"
+        },
+        {
+            "name": "Adapter",
+            "pricing": [
+
+            ],
+            "option": [
+                {
+                    "name": "Port direction",
+                    "option": ["left", "right"]
+                }
+            ],
+            "removeable": false,
+            "image": "dongle_top.png"
+        }
+    ]
+}
