@@ -10,11 +10,15 @@
     
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/homeStyle.css">
-    
+
 </head>
 <body>
 
     <div class="menubar dark-purple">
+
+        <a class="menu left purple-i" href="start.html">
+            Quick start
+        </a>
 
         <a class="menu left purple-i" href="download.php">
             Software
@@ -27,6 +31,22 @@
         <a class="menu purple-1" href="order.php">
             Buy
         </a>
+
+        <a href="#" id="burgerOpen"><img class="burger" src="icons/burger.svg" alt=""></a>
+
+        <div id="burgerMenu">
+            
+            <div class="menubar">
+                <a href="#" id="burgerClose"><img class="burger" src="icons/burger_b.svg" alt=""></a>
+            </div>
+
+            <a href="start.html"><h1>Quick start</h1></a>
+            
+            <a href="download.php"><h1>Software</h1></a>
+            
+            <a href="order.php"><h1 class="buy">Buy</h1></a>
+            
+        </div>
 
     </div>
     
@@ -71,7 +91,7 @@
             <h1>Made in the EU.</h1>
             <h4>Exactlink is designed, produced and shipped from The Netherlands.</h4>
             <br>
-            <h4>Making Holland great again ; )</h4>
+            <h4>"Making Holland great again"</h4>
         </div>
 
         <div class="feature">
@@ -93,7 +113,7 @@
 
             <div class="explanation">
                 <h2>> Compatibility</h2>
-                <div>Exactlink comes with a DB25 connector for a RS232 interface. Tested on Fanuc controlled machinestools, and follows the RS232 standard. The desktop application is available for Windows and Linux systems, designed with both tablets and desktops in mind.</div>
+                <div>Exactlink comes with a DB25 connector for a RS232 interface. Tested on Fanuc controlled machinetools, and follows the RS232 standard. The desktop application is available for Windows and Linux systems, designed with both tablets and desktops in mind.</div>
             </div>
 
             <div class="explanation">
@@ -143,13 +163,11 @@
 
     </div>
 
+    <script src="main.js"></script>
 
     <script>
 
-        document.getElementById("bottomPage").addEventListener("click", function ()
-        {
-            window.scrollTo(0, document.body.scrollHeight);
-        });
+        
 
         function videoheight() {
             let one_feature = document.getElementById("one-feature");
@@ -160,9 +178,11 @@
             document.getElementById("loopingvid").muted = true;
         };
 
-        videoheight();
+        // videoheight();
 
-        window.onresize = function () {videoheight()};
+        // window.onresize = function () {videoheight()};
+
+        
 
     </script>
 
