@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Oxygen';
     src: url("fonts/Oxygen-Light.ttf") format("truetype");
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Oxygen';
 
     background-color: #180818;
     color: #fff;
