@@ -14,41 +14,42 @@
 </head>
 <body>
 
-    <div class="menubar dark-purple">
+    <div id="menubar" class="menubar dark-purple">
 
-        <a class="menu left purple-i" href="start.html">
-            Quick start
-        </a>
+        <a class="button purple-i" href="#">Home</a>
 
-        <a class="menu left purple-i" href="download.php">
-            Software
-        </a>
+        <a class="button purple-i" href="./pages/start.html">Quick start</a>
 
-        <div class="menu purple-i" id="bottomPage" href="#">
-            Contact
-        </div>
+        <a class="button purple-i" href="./pages/download.php">Software</a>
 
-        <a class="menu purple-1" href="order.php">
-            Buy
-        </a>
+        <div class="menuSpacer"></div>
 
-        <a href="#" id="burgerOpen"><img class="burger" src="icons/burger.svg" alt=""></a>
+        <div class="button purple-i" id="bottomPage" href="#">Contact</div>
+
+        <a class="button purple-1" href="./pages/product.php">Buy</a>
+
+        <a href="#" id="burgerOpen"><img class="burger" src="./icons/burger.svg" alt=""></a>
 
         <div id="burgerMenu">
             
             <div class="menubar">
-                <a href="#" id="burgerClose"><img class="burger" src="icons/burger_b.svg" alt=""></a>
+                <div class="menuSpacer"></div>
+                <a href="#" id="burgerClose"><img class="burger" src="./icons/burger_b.svg" alt=""></a>
             </div>
 
-            <a href="start.html"><h1>Quick start</h1></a>
+            <a href="#"><h1>Home</h1></a>
             
-            <a href="download.php"><h1>Software</h1></a>
+            <a href="./pages/start.html"><h1>Quick start</h1></a>
             
-            <a href="order.php"><h1 class="buy">Buy</h1></a>
+            <a href="./pages/download.php"><h1>Software</h1></a>
+            
+            <a href="./pages/product.php"><h1 class="buy">Buy</h1></a>
             
         </div>
 
     </div>
+
+    <div id="menubarSpacer"></div>
     
     <div class="title">
 
@@ -60,7 +61,7 @@
         </div>
 
         <div class="big-ass">
-            <img src="assets/renders/exactlink_device.png" alt="">
+            <img src="./assets/exactlink_device.png" alt="">
         </div>
                 
     </div>
@@ -68,27 +69,27 @@
     <div class="feature-container dark-purple">
         
         <div class="purple-1 feature">
-            <h1>Up & Download.</h1>
+            <h1>Up & Download</h1>
             <h4>Transfer GCODE from a USB connected Tablet or PC to or from any Fanuc RS232 enabled machinetool.</h4>
         </div>
 
         <div class="feature purple-2">
-            <h1>Data safety.</h1>
+            <h1>Data safety</h1>
             <h4>Keep your factory network disconnected from the internet. When a software update is available you will be notified.</h4>
         </div>
 
         <div class="feature purple-3">
-            <h1>Edit files on the fly.</h1>
+            <h1>Edit files on the fly</h1>
             <h4>Edit files prior to sending to your machinetool. No more walking around with USB's, CompactFlash or PC cards!</h4>
         </div>
 
         <div class="feature purple-4">
-            <h1>Dripfeed large files.</h1>
+            <h1>Dripfeed large files</h1>
             <h4>Avoid memory constraints by live feeding your machinetool with complex toolpaths.</h4>
         </div>
 
         <div class="feature eu">
-            <h1>Made in the EU.</h1>
+            <h1>Made in the EU</h1>
             <h4>Exactlink is designed, produced and shipped from The Netherlands.</h4>
             <br>
             <h4>"Making Holland great again"</h4>
@@ -114,6 +115,11 @@
             <div class="explanation">
                 <h2>> Compatibility</h2>
                 <div>Exactlink comes with a DB25 connector for a RS232 interface. Tested on Fanuc controlled machinetools, and follows the RS232 standard. The desktop application is available for Windows and Linux systems, designed with both tablets and desktops in mind.</div>
+            </div>
+
+            <div class="explanation">
+                <h2>> Sustainability</h2>
+                <div>With Exactlink existing machinetools operate as easy as their costly counterpart.<br>Make the most out of their servicelife to benefit people and the environment.<br>Good business all around!</nr></div>
             </div>
 
             <div class="explanation">
@@ -163,7 +169,7 @@
 
     </div>
 
-    <script src="main.js"></script>
+    <script src="./js/burger.js"></script>
 
     <script>
 
@@ -173,7 +179,7 @@
             let one_feature = document.getElementById("one-feature");
             let one_feature_container = document.getElementById("one-feature-container");
             
-            one_feature_container.innerHTML = `<div id="one-feature">` + one_feature.innerHTML + `</div><video autoplay loop id="loopingvid" src="./assets/renders/movin parts 2.mp4" style="height: calc(` + one_feature.clientHeight + `px + 12em)"></video>`;
+            // one_feature_container.innerHTML = `<div id="one-feature">` + one_feature.innerHTML + `</div><video autoplay loop id="loopingvid" src="../assets/renders/movin parts 2.mp4" style="height: calc(` + one_feature.clientHeight + `px + 12em)"></video>`;
 
             document.getElementById("loopingvid").muted = true;
         };

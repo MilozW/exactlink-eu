@@ -15,14 +15,23 @@ h1, h2, h3, h4, h5, h6, body {
     margin: 0;
 }
 
+input, select {
+    /* border-radius: 0;
+    border: 2px solid #180818;
+    background-color: #fff;
+    padding: 0.5em; */
+
+    width: 100%;
+    border-radius: 0;
+    border: 2px solid #180818;
+    background-color: #fff;
+    padding: 0.75em;
+    box-sizing: border-box;
+}
+
 .video {
     aspect-ratio: 16 / 9;
     background-color: rgb(153, 153, 153);
-}
-
-.title {
-    margin: 3em;
-    margin-top: 6em;
 }
 
 .purple-1, .purple-2, .purple-3, .purple-4, .purple-5 {
@@ -75,20 +84,6 @@ video {
     margin-right: auto; 
 }
 
-@media (max-width: 800px)
-{
-    .title {
-        grid-template-columns: 100%;
-    }
-}
-
-@media (min-width: 800px)
-{
-    .title {
-        grid-template-columns: 50% 50%;
-    }
-}
-
 .explanation h2 {
     padding: 0.5em 0 0.5em 0;
 }
@@ -135,17 +130,29 @@ video {
     text-align: right;
 }
 
+.button {
+    
+    padding: 0.5em 1em;
+    margin: auto 1em;
+    border-radius: 1000em;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
 
 .menu {
     float: right;
-    
-    padding: 0.5em 1em;
-    margin: 1em;
-    border-radius: 1000em;
 
-    text-decoration: none;
 }
 
-.left {
-    float: left;
+.menuSpacer {
+    margin: auto;
+}
+
+.buttons {
+    display: flex;
+    
 }

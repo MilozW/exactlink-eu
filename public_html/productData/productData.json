@@ -1,0 +1,102 @@
+{
+    "bulkPricing": [
+        {
+            "max": 4,
+            "price": 580
+        },
+        {
+            "max": 9,
+            "price": 522
+        },
+        {
+            "max": 14,
+            "price": 493
+        },
+        {
+            "max": 1000,
+            "price": 470
+        }
+    ],
+    
+    "resellerDiscountFactor": 0.75,
+
+    "products": [
+        {
+            "image": ["exactlinkOutside.jpg", "exactlinkMagnets.jpg", "exactlinkInside.jpg", "exactlinkSending.jpg"],
+            "headerImage": "exactlink_device.png",
+
+            "description": {
+                "short": "Device linking your machine and tablet or PC",
+                "long": "Exactlink connects in between your machine and to a tablet or PC with a USB cable. When connected the application will detect this and you can start transmitting instantly!"
+            },
+
+            "name": "Exactlink",
+            "root": "exactlink"
+        },
+        {
+            "image": ["top.jpg", "front.jpg", "back.jpg"],
+            "headerImage": "dongle_top.png",
+            
+            "description": {
+                "short": "DB25 to Exactlink adapter",
+                "long": "DB25 to Exactlink adapter"
+            },
+            
+            "name": "Adapter",
+            "root": "adapter",
+
+            "option": [
+                {
+                    "name": "DB25 adapter cord direction",
+                    "id": "portDirSelect",
+                    "optionValue": ["left", "right"],
+                    "optionName": ["Left", "Right"]
+                }
+            ]
+        },
+        {
+            "image": ["usbCable.png", "RJ45cable.jpg"],
+            "headerImage": "RJ45cable.jpg",
+            
+            "description": {
+                "short": "Connecting to your machinetool",
+                "long": "USB A to USB C cable for connecting your device to a tablet or PC and a RJ45 cable for in between your machinetool and device."
+            },
+            
+            "name": "Data cable",
+            "root": "data_cable",
+
+            "option": [
+
+                {
+                    "name": "USB cable length",
+                    "id": "USBlenSelect",
+                    "optionValue": ["0.5", "1", "3"],
+                    "optionName": ["0.5 metre", "1 metre", "3 metre"]
+                }
+                
+            ]
+        },
+        {
+            "image": ["usbCable.png", "RJ45cable.jpg"],
+            "headerImage": "usbCable.png",
+            
+            "description": {
+                "short": "Connecting to your tablet or PC",
+                "long": "USB A to USB C cable for connecting your device to a tablet or PC and a RJ45 cable for in between your machinetool and device."
+            },
+            
+            "name": "USB cable",
+            "root": "usb_cable",
+
+            "option": [
+                {
+                    "name": "RS232 cable length",
+                    "id": "RS232lenSelect",
+                    "optionValue": ["0.5", "1", "3", "5"],
+                    "optionName": ["0.5 metre", "1 metre", "3 metre", "5 metre"]
+                }
+            ]
+        }
+    ]
+}

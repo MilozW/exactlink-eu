@@ -1,0 +1,92 @@
+body {
+    background-color: #fff;
+    color: #180818;
+}
+
+.container {
+}
+
+@media (max-width: 800px)
+{
+    .lengths, .portDir {
+        display: block;
+    }
+
+    .portDir .explainer {
+        text-align: left;
+    }
+
+    .portDir {
+        padding-bottom: 1em;
+    }
+
+    .container {
+        width: calc(100% - 4em);
+        height: calc(100% - 4em);
+        
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .button {
+        margin: auto 0.25em;
+    }
+}
+
+@media (min-width: 800px)
+{
+    .lengths, .portDir {
+        display: flex;
+    }
+
+    .portDir .explainer {
+        text-align: right;
+    }
+
+    .container {
+        width: calc(100% - 14em);
+        height: calc(100% - 8em);
+        
+        padding: 2em;
+        margin: 2em 5em;
+    }
+}
+
+.lengths, .portDir, .title {
+    background-color: #ebebee;
+    padding: 2em;
+    margin: 2em 0;
+    /* border-radius: 2em 2em 0 0; */
+    border-left: 2px solid #180818;
+
+}
+
+.lengths img {
+    /* height: 13em; */
+    width: 100%;
+
+}
+
+.selects {
+    margin: auto 4em auto 0;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 0 2em 2em;
+    margin-top: 0;
+}
+
+.title h3 {
+    margin: 0 0.5em auto 0;
+}
+
+.portDir {
+    justify-content: space-between;
+}
+
+.inputLabel {
+    white-space: nowrap;
+}
